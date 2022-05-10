@@ -1,0 +1,13 @@
+import random
+mike =True
+while mike:
+    result = int(input('Throw your Guess'))
+    target_num = random.randint(1,9)
+    guess_num = 0
+    
+    if result == target_num:
+        print(f'Congratulation Your guess of {result} tallies with the target of {target_num}/n')
+        break
+    else:
+        print('Wrong Guess try again')
+        print(f'The Number is {target_num}\n')
